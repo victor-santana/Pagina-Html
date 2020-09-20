@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Mercado Impedido</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        
+   
+         
+    <div class="col-mad-3"> 
+        <div class="menu">
+            
+        
+        <div class="row">
+            
+            <div class="col-mad-3">
+            <div class="logo">
+                <img src="img/logomenor.png" width="250" height="100">
+            </div>
+                </div>
+                
+                <div class="col-mad-3"> 
+                <div class="buscar">
+                    <div id="divBusca">
+                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="checkox" name="txtBusca"  placeholder="Buscar Produtos..." />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    
+                    <div class="categoria">
+                    
+                   
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="home.html"> HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="categoria.html"> CATEGORIAS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="vender.html"> VENDER</a>
+                
+                    </div>
+                </div>
+                    
+                    
+                    </div>
+                    <div class="col-mad-3"> 
+                            <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="col-mad-3"> 
+                        <button class="btn btn-dark" id="btCrieSua">Crie sua Conta</button>
+                        <button class="btn btn-dark" id="btEntre">Entre</button>
+                            <a href="tabela.html"> 
+                        <button class="btn btn-dark" id="btCompras">Compras <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></a>
+                        </div>
+                        </div>
+                
+            
+
+                                          
+
+            
+            <div class="modal fade" id="CrieSua" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Crie Sua Conta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Nome:</label>
+                                    <input type="text" class="form-control" id="txtNome" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>CPF:</label>
+                                    <input type="number" class="form-control" id="txtcpf" />
+                                    
+                                </div>
+                                <div class="col-md-12">
+                                    <label>e-Mail:</label>
+                                    <input type="email" class="form-control" id="txtMail"  />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>CEP</label>
+                                    <input type="number" name="cep"  maxlength="7" size="7"  class="form-control">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" id="txtSenha" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Telefone</label>
+                                    <input type="number" class="form-control" id="txtFone" maxlength="11" size="11" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" id="btAdd"><i class="fa fa-plus"></i> Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal Crie Sua Conta -->
+        
+                    <div class="modal fade" id="Entre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entre</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <label>e-Mail:</label>
+                                    <input type="email" class="form-control" id="txtMail"  />
+                                </div>
+                                
+
+                                <div class="col-md-12">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" id="txtSenha" />
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" id="btAdd"><i class="fa fa-plus"></i> Entrar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Entre-->
+        </div>
+        
+        <!-- MENU PRINCIPAL -->
+    </head>
+        
+    <body>
+        
+        
+            
+                <div class="container" id="primriro">
+                    <br>
+                    <div class="row">
+                        <h3 id="borda_titulo" >Produtos em Destaque</h3> <br> 
+
+                        <br>
+                        <div class="col-md-12">
+                            
+                            <div id="imgGrande">
+                                <img src="img/mae.png" class="img-fluid" />
+                                <a href="#" id="flechaEsq" class="flecha"><i class="fa fa-chevron-left fa-2x"></i></a>
+                                <a href="#" id="flechaDir" class="flecha"><i class="fa fa-chevron-right fa-2x"></i></a>
+                                <p id="legenda">Feliz Dias das Mães</p>
+                                <a href="#" id="lupa" class="btInterno"><i class="fa fa-search fa-2x"></i></a>
+                                <a href="#" id="pausa" class="btInterno"><i class="fa fa-pause fa-2x"></i></a>
+                                <a href="#" id="play" class="btInterno"><i class="fa fa-play fa-2x"></i></a>
+                            </div>
+
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <img src="img/mae.png" class="img-fluid thumb" alt="Feliz Dias das Mães" title="Feliz Dias das Mães" />
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <img src="img/tudoparacasa.png" class="img-fluid thumb" alt="Tudo Para sua Casa" title="Tudo Para sua Casa" />
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <img src="img/beleza.png" class="img-fluid thumb" alt="Saúde e Beleza" title="Saúde e Beleza" />
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <img src="img/familia.png" class="img-fluid thumb" alt="Seu novo Lar" title="Seu novo Lar" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            
+        </div>
+
+            <!-- Modal Img-->
+            <div class="modal fade" id="mdViewImg" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="" id="detImagem" alt="" class="img-fluid" />
+                            <br />
+                            <h4 id="detLegenda"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br> <br> <br>
+
+
+            <div class="container">
+                <br> <br>
+                <div class="row">
+
+
+                    <div class="col-md-3 col-6">
+
+                        <a href="produto2.html">
+                            <img src="img/tv1.jpg" class="fotoProdutos" id="imgfoto" alt="Televisão" title="Televisão" width="200px" height="200px" />
+                            <br> <br>
+                            <p id="legenda_foto"> Televisão <br> R$1000,00  </p>
+                        </a>
+
+
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="produto.html">
+                            <img src="img/bote.jpeg" class="fotoProdutos" id="imgfoto" alt="Bote" title="Bote" width="200px" height="200px" />
+
+                            <p id="legenda_foto"> Bote<br> R$200,00  </p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="produto3.html">
+                            <img src="img/war.jpg" class="fotoProdutos" id="imgfoto" alt="War" title="War" width="200px" height="200px" />
+                            <p id="legenda_foto"> War<br> R$90,00  </p>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a href="produto4.html">
+                            <img src="img/cozinha.jpg" class="fotoProdutos" id="imgfoto" alt="Cozinha" title="Cozinha" width="200px" height="200px" />
+                            <p id="legenda_foto"> Cozinha<br> R$1500,00  </p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- CDN do jQuery -->
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                    crossorigin="anonymous"></script>
+
+            <!-- CDN do bootstrap -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+            <script type="text/javascript" src="js/codigo.js"></script>
+
+            <script type="text/javascript">
+
+            </script>
+
+                <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br />
+
+
+            <div class="rodaPe">
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo.jpg">Fundo 1</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo2.jpg">Fundo 2</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo3.jpg">Fundo 3</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo4.jpg">Fundo 4</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+    
+    
+  

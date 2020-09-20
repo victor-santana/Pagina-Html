@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Carrinho</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+	<style type="text/css">
+    		body {
+    	background-color: yellow;
+    
+    
+    	}
+	.card {
+    	padding: 15px;
+    	box-shadow: 0px 0px 10px #888;
+    	margin: 10px 0px;
+	}
+
+  	</style>
+        
+    </head>
+    <body>
+        <section>
+            <a href="home.html"><h1> VOLTAR PARA HOME</h1> </a>
+            <div class="container">
+                <div class="card">
+                    <h1><i class="fa fa-shopping-cart"></i> Compras
+                        <span class="badge badge-danger pull-right" id="numReg">4</span>
+                    </h1>
+                    <form class="form" id="form" name="frm1" onsubmit="return false">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label>CODIGO </label>
+                                <input type="text" name="RA" id="cpRA" class="form-control" required />
+                            </div>
+                            <div class="col-md-3">
+                                <label>NOME DO PRODUTO</label>
+                                <input type="mail" name="Nome" id="cpNome" class="form-control" required />
+                            </div>
+                            <div class="col-md-1">
+                                <label>VALOR</label>
+                                <input type="text" name="A1" id="cpA1" class="form-control" required />
+                            </div>
+                                <div class="col-md-1">
+                                <label>PARCELAS</label>
+                                <input type="text" name="D1" id="cpD1" class="form-control" required />
+                            </div>
+                            <div class="col-md-1">
+                                <label>Quantidade</label>
+                                <input type="text" name="Q" id="cpQ" class="form-control" required />
+                            </div>
+                            
+                            <div class="col-md-2">
+                                <button class="btn btn-block btn-warning" style="margin-top:31px" id="btAdd">
+                                    <i class="fa fa-plus"></i> Inserir
+                                </button>
+                            </div>
+                        </div>
+                        <hr />
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="card">
+                    <h3>Notas Alunos</h3>        
+                    <table class="table table-striped table-hovered" id="tabNomes">
+                        <thead>
+                            <tr>
+                                <th>CÓDIGO</th>
+                                <th style="width:250px">Nome do Produto</th>
+                                <th style="width:150px">Valor</th>
+                                <th style="width:150px">Quantidade</th>
+                                <th style="width:150px">Parcelas</th>
+                                <th style="width:150px">Valor da Parcela</th>
+                                <th style="width:150px"></th>
+                                
+                            </tr>-
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>815158809</td>
+                                <td>TV 55</td>
+                                <td>1000</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td> 100</td>
+                                
+                                
+                                
+                                <td><button class='btn btn-success btDel'><i class='fa fa-times'></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>819154229</td>
+                                <td>Bote</td>
+                                <td>200</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>100</td>
+                                
+                                <td><button class='btn btn-success btDel'><i class='fa fa-times'></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>819153299</td>
+                                <td>War</td>
+                                <td>90</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>90</td>
+                                
+                                <td><button class='btn btn-success btDel'><i class='fa fa-times'></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>81915700</td>
+                                <td>Cozinha</td>
+                                <td>1500</td>
+                                <td>1</td>
+                                <td>10</td>
+                                <td>150</td>
+                                
+                                <td><button class='btn btn-success btDel'><i class='fa fa-times'></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+        $(document).ready(function() {
+    $("#btAdd").click(function() {
+        //pegar os dados do formulário
+        nome = $("#cpNome").val();
+        Codigo = $("#cpCodigo").val();
+        fone = $("#cpFone").val();
+        Preço = $("#cpPreço").val();
+        
+
+        //monta a linha da tabela
+        bloco  = "<tr>";
+        bloco += "<td>" + nome + "</td>";
+        bloco += "<td>" + Codigo + "</td>";
+        bloco += "<td>" + fone + "</td>";
+        bloco += "<td>" + Preço + "</td>";
+        
+        bloco += "<td><button class='btn btn-danger btn-sm btDel'><i class='fa fa-times'></i></button></td>";
+        bloco += "</tr>";
+
+        //adiciona a linha na tabela
+        $("#tabNomes tbody").append(bloco);
+
+        //limpa o formulário
+        $("#form")[0].reset();
+        $("#cpNome").focus();
+
+        //contaReg();
+        contaReg();
+       
+    });
+
+    $(document).on("click",".btDel",function() {
+        elem = $(this);
+        if(confirm("Deseja realmente apagar a linha?")) {
+            elem.closest("tr").remove();
+            contaReg();
+        }
+    });
+    
+});
+
+function contaReg() {
+    num = $("#tabNomes tbody tr").length;
+     $("#numReg").html(num);
+    
+}
+        </script>
+       
+        
+        
+               
+        
+    
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/codigo.js"></script>
+        
+        
+    </body>
+</html>

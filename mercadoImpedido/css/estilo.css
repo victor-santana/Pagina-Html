@@ -1,0 +1,345 @@
+body {
+    
+   background: url(../img/fundo3.jpg);
+    
+    
+}
+h1 {
+   
+}
+p {
+    font-family: arial;
+    color:       black;
+    font-size:   20px;
+}
+
+
+div.menu{
+    
+    margin: 0px;
+    margin-top: 0px;
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    
+    background-color: yellow;
+}
+
+div.rodaPe{
+   
+    margin-top: 0px;
+    width: 100%;
+    height: 70px;
+    
+    background-color: yellow;
+}
+
+div.logo{
+    width: 23.4375%;
+    height: 100px;
+    float: left;
+    
+	
+}
+
+div.buscar{
+    width:500px;
+    height: 100px;
+    float:left;
+    
+}
+
+div.modal-header{
+    background-color: yellow;
+    
+}
+
+
+
+div.modal fade{
+    width:500px;
+    height: 100px;
+    float:left;
+    position: relative;
+    
+    
+}
+
+
+
+input{
+    width: 450px;
+}
+
+head{
+    background-color: yellow;
+    
+}
+
+img.thumb,#imgfoto, #imgGrande img {
+    padding:10px;
+    background-color:#fff;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+    width: 100%;
+    
+    
+}
+#imgGrande img {
+    height:500px;
+    width: 100%;
+    height: 300px;
+}
+
+#imgGrande {
+    position:relative;    
+}
+.flecha {
+    position: absolute;
+    top:45%;
+    color:#fff;
+    background:rgba(0,0,0,0.6);
+    padding:10px 18px;
+    border-radius: 50%;
+}
+#flechaDir {
+    right: 25px;
+}
+#flechaEsq {
+    left: 25px;
+    
+}
+#lupa {
+    position: absolute;
+    top:25px;
+    right: 30px;
+    color: black;
+}
+#pausa {
+    position: absolute;
+    top:25px;
+    right: 90px;
+    color: black;
+}
+#play {
+    position: absolute;
+    top:25px;
+    right: 150px;
+    color: black;
+}
+a:hover {
+    color: #ccc;
+}
+#legenda {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 15px;
+    padding: 4px 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+div.fotoProdutos{
+    border-left-color: black
+    padding:10px;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+    width: 100%;
+    
+    
+}
+
+#legenda_foto {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    padding: 3px 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    
+}
+
+
+div.paginaProduto{
+    
+    position: relative;
+    
+    
+    
+}
+
+
+
+div.imagemProduto{
+    position: relative;
+    float: left;
+    
+}
+
+
+
+div.fotosMenores{
+    position: relative;
+    float: left;
+    left: 100px;
+}
+
+div.fotoGrandeProduto{
+    position: relative;
+    float: left;
+    left: 110px;
+   
+}
+div.valorProduto{
+    
+        position: relative;
+    float: left;
+    
+    left: 150px;
+}
+
+#imgfotoPequenaProduto{
+        padding:10px;
+    background-color:#fff;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+    
+    
+}
+
+#imgfotoCentralProduto{
+            padding:10px;
+    background-color:#fff;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+    
+}
+
+
+
+div.tabeladescricao {
+    position: relative;
+    float: right;
+    
+    
+
+    
+}
+div.tabela{
+    position: relative;
+    margin: 100px;
+            padding:10px;
+    background-color:#fff;
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+}
+
+#linha1{
+    background-color: #FFFF20;
+}
+
+#linha2{
+    background-color: #FFFF90;
+}
+   
+
+div.categoria{
+    margin: 0%;
+    margin-bottom: 15%;
+}
+
+div.categoria1{
+    margin-left: 20%;
+}
+
+detalhe{
+   position: relative;
+    float: left;
+}
+
+#fotoCategoria{
+    
+    
+    border: 1px solid #333;
+    box-shadow: 0px 0px 5px #333;
+    
+    
+}
+
+div.row{
+    margin: 0px;
+}
+
+div.container{
+   
+}
+
+#primriro{
+    
+    margin-left: 5%;
+    
+    
+}
+
+#borda_titulo {
+
+    position: relative;
+    margin:0px;
+    width: 700px;
+    height: 50px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow:1px 1px 4px black;
+    margin-left: 17%;
+}
+
+.carrinho0001{
+    
+    
+    margin-left: 20%;
+    
+}
+.titulo_carrinho0001{
+    background-color: yellow;
+    border-radius: 2px;
+    
+}
+
+.carrinho0001{
+    margin-bottom: 10%;
+    
+    
+}
+
+.card2{
+    position: relative;
+    background-color: white;
+    margin-top: 5%;
+    margin: 8%;
+}
+
+.botao_carrinho10{
+    position: absolute;
+    left: 60%;
+    bottom: -22%;
+}
+
+.fundocalcularora{
+    background-color: yellow;
+    margin-left: 22%;
+}
+.card{
+    margin-left: 25%;
+}
+
+.ProdutosCarrinho0001{
+    margin-left: 15%;
+}
+
+
+
+
+

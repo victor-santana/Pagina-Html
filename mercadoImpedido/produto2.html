@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Mercado Impedido</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    
+         
+    
+        <div class="col-mad-3"> 
+        <div class="menu">
+            
+        
+        <div class="row">
+            
+            <div class="col-mad-3">
+            <div class="logo">
+                <img src="img/logomenor.png" width="250" height="100">
+            </div>
+                </div>
+                
+                <div class="col-mad-3"> 
+                <div class="buscar">
+                    <div id="divBusca">
+                         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="checkox" name="txtBusca"  placeholder="Buscar Produtos..." />
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    
+                    <div class="categoria">
+                    
+                   
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="home.html"> HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="categoria.html"> CATEGORIAS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="vender.html"> VENDER</a>
+                
+                    </div>
+                </div>
+                    
+                    
+                    </div>
+                    <div class="col-mad-3"> 
+                            <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <div class="col-mad-3"> 
+                        <button class="btn btn-dark" id="btCrieSua">Crie sua Conta</button>
+                        <button class="btn btn-dark" id="btEntre">Entre</button>
+                        <a href="tabela.html"> 
+                        <button class="btn btn-dark" id="btCompras">Compras <i class="fa fa-shopping-cart" aria-hidden="true"></i></button></a>
+                        </div>
+                        </div>
+                
+            
+
+                                          
+
+            
+            <div class="modal fade" id="CrieSua" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Crie Sua Conta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Nome:</label>
+                                    <input type="text" class="form-control" id="txtNome" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>CPF:</label>
+                                    <input type="number" class="form-control" id="txtcpf" />
+                                    
+                                </div>
+                                <div class="col-md-12">
+                                    <label>e-Mail:</label>
+                                    <input type="email" class="form-control" id="txtMail"  />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>CEP</label>
+                                    <input type="number" name="cep"  maxlength="7" size="7"  class="form-control">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" id="txtSenha" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Telefone</label>
+                                    <input type="number" class="form-control" id="txtFone" maxlength="11" size="11" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" id="btAdd"><i class="fa fa-plus"></i> Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal Crie Sua Conta -->
+        
+                    <div class="modal fade" id="Entre" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entre</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    <label>e-Mail:</label>
+                                    <input type="email" class="form-control" id="txtMail"  />
+                                </div>
+                                
+
+                                <div class="col-md-12">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" id="txtSenha" />
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" id="btAdd"><i class="fa fa-plus"></i> Entrar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Entre-->
+        </div>
+        
+        <!-- MENU PRINCIPAL -->
+    </head>
+        
+    <body>
+         <div class="modal fade" id="ComprarAgora" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Forma de Pagamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                
+                                
+                                
+                                
+                            <div class="checkbox">
+                                
+                                <div class="col-md-12">
+                                &nbsp; &nbsp;
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                Cartão de Credito
+                                </label>
+                                </div>
+                                
+                                <div class="col-md-12">
+                                &nbsp;&nbsp;&nbsp;
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                Boleto Bancario 
+                                </label>
+                                </div>
+                                
+                            
+                                
+                            </div>
+
+                              
+                              
+                               
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning btn-block"   data-dismiss="modal" id="btRealizarCompra"><i class="fa fa-plus"></i> Realizar Compra</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal ComprarAgora-->
+        </div>
+        
+        <br> <br> 
+              <div class="paginaProduto">
+                    
+                <div class="imagemProduto">
+                    <div class="fotosMenores" width="100" height="100" > 
+                        <img src="img/tv1.jpg" width="110" height="110" class="img-fluid colar" id="imgfotoPequenaProduto" alt="Tv1" title="Tv1"> <br> <br>
+                        <img src="img/tv2.jpg" width="110" height="110" class="img-fluid colar" id="imgfotoPequenaProduto" alt="Tv2" title="Tv2"> <br> <br>
+                        <img src="img/tv3.jpg"width="110" height="110" class="img-fluid colar" id="imgfotoPequenaProduto" alt="Tv3" title="Tv3"> 
+                    </div>
+                    
+                    <div class="fotoGrandeProduto">
+                            <img src="img/tv1.jpg" width="400" height="400" class="img-fluid colar" id="imgfotoCentralProduto" class="imagemProduto colar" >
+                    </div>
+                    </div>
+                        
+                    <div class="valorProduto">
+                        
+                        <h1> Smart Tv Led 50 Polegadas AOC </h1>
+                       <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"> &nbsp; 21 opiniões</i>
+                        
+                        <h2>R$ 1000,00</h2>
+                        <i class="fa fa-credit-card"> 10x100,00</i> <br>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-barcode" ></i>
+                        <i class="fa fa-cc-visa"></i>
+                        <br> <br>
+                        <i class="fa fa-truck"> Frete grátis</i>
+                        <br> <br>
+                        <button class="btn btn-dark" id="btComprarAgora">Comprar Agora</button>
+                        
+                        <a href="carrinho2.html">
+                                            
+                        <button class="btn btn-secondary" id="btAdicionarAoCarrinho">Adicionar ao Carrinho</button>
+                            </a>
+                         
+                    </div>
+                    
+                   
+        
+                </div>
+        
+        
+        
+    
+        
+        
+            
+       
+                <br> <br><br><br><br><br><br><br><br><br><br><br><br>
+            
+        <div class="tabela">
+        
+            <table class="tabeladescricao" id="tabelaDescricao">
+                        <table >
+                            <tr id="linha1">
+                                <td><h1> Descrição:</h1> <p align="justify">Smart TV LED 50 Polegadas AOC LE50U7970S HD 4K Ultra HD Wi-fi 4 HDMI USB ACESSO AO NETFLIX, YOUTUBE, entre outros.</p></td>
+                                
+                            </tr>
+                            
+                            
+
+                            <tr id="linha2">
+                                <td> <h2> Caracteristicas:</h2> <p> <li>Tamanho da tela (polegadas) 50 polegadas</li> <br> <li>Tipo de painel: LED </li> <br> <li>Resolução (modo TV) 3840x2160 (UHD 4K) </li> <br> <li>Com corda de segurança para evitar quedas </li> <br> <li> Frequência do painel 60 Hz</li> <br> <li> Receptor Digital Integrado (DTV) Sim</li> <br> <li> Contraste (Dinâmico) 200,000:1</li> </p> </td>
+                                
+                            
+                            
+                            
+                        
+                    </table>
+        </div>
+            
+         
+        <div class="rodaPe">
+                   
+                                     <br>
+                   <div class="row" >
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo.jpg">Fundo 1</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo2.jpg">Fundo 2</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo3.jpg">Fundo 3</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-block btn-primary trocaFundo" data-fundo="img/fundo4.jpg">Fundo 4</button>
+                    </div>
+                </div>
+                   
+                   </div> 
+            
+
+
+        
+        <!-- CDN do jQuery -->
+        <script
+          src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+        
+        <!-- CDN do bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript" src="js/codigo.js"></script>
+        
+        <script type="text/javascript">
+            
+        </script>
+        
+    
+        
+        
+                
+    
+    
+
+    
+                
+    </body>
+</html>
+
+ 
