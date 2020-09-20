@@ -1,2 +1,2 @@
 # Pagina-Html
-Uma pagina estica de uma loja de compra
+Uma pagina estática de uma loja de compras
